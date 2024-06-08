@@ -91,7 +91,7 @@ public class Bootcamp {
         if (nome != null && !nome.isEmpty()) {
             this.nome = nome;
         } else {
-            System.out.println("Nome inválido");
+            throw new IllegalArgumentException("Nome inválido");
         }
     }
 
