@@ -35,7 +35,7 @@ public class Bootcamp {
         System.out.println("Cursos:");
         int i = 1;
         for (Curso curso : this.cursos) {
-            System.out.println(i + " - " + curso.getNome());
+            System.out.println(i + " - " + curso.getNome() + ", instrutor: " + curso.getInstrutor());
             i++;
         }
     }
@@ -56,7 +56,7 @@ public class Bootcamp {
         System.out.println("Mentorias:");
         int i = 1;
         for (Mentoria mentoria : this.mentorias) {
-            System.out.println(i + " - " + mentoria.getTitulo());
+            System.out.println(i + " - " + mentoria.getTema() + ", data e hora: " + mentoria.getDataHora());
             i++;
         }
     }
@@ -77,7 +77,7 @@ public class Bootcamp {
         System.out.println("Devs:");
         int i = 1;
         for (Dev dev : this.devs) {
-            System.out.println(i + " - " + dev.getNome());
+            System.out.println(i + " - " + dev.getNome() + " | " + dev.getNivel());
             i++;
         }
     }
